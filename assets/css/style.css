@@ -9,8 +9,70 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     height: 100%;
     font-family: 'ABeeZee', sans-serif;
+}
+
+#rules {
+    font-size: 150%;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+#rules:hover {
+    transform: scale(1.5);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#computer-box {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.arrow {
+    margin-top: 100px;
+}
+
+#computer-flip {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.computer-area {
+    display:flex;
+}
+
+#player-box {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.arrow-two {
+    margin-top: 100px;
+}
+
+#player-flip {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.player-area {
+    display:flex;
 }
