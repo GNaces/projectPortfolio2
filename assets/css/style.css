@@ -11,10 +11,12 @@ body {
     min-height: 100vh;
     height: 100%;
     font-family: 'ABeeZee', sans-serif;
+    color: rgb(253, 251, 249);
+    background: url("../image/background.jpg") no-repeat center center/cover;
 }
 
 #rules {
-    font-size: 150%;
+    font-size: 110%;
     margin: .5rem;
     cursor: pointer;
 }
@@ -29,30 +31,45 @@ h1 {
 }
 
 .box {
-    width: 150px;
-    height: 200px;
+    width: 250px;
+    height: 350px;
     border: 2px solid black;
     border-radius: 5px;
     margin-top: 10px;
 
-}
-
-.arrow {
-    margin-top: 100px;
 }
 
 .flip {
-    width: 150px;
-    height: 200px;
+    width: 250px;
+    height: 350px;
     border: 2px solid black;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-.computer-area {
+.game-area {
     display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 5px;
+
 }
 
-.player-area {
-    display:flex;
+.fence {
+    width: 95%;
+    height: 7px;
+    border: 0 none;
+    margin: auto;
+    background-color: gray;
+
+}
+
+.count {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+    font-size: 150%;
+    gap: 10px;
+    
 }
