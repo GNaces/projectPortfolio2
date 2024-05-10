@@ -8,9 +8,11 @@
 }
 
 body {
+    margin-bottom: 10px;
     font-family: 'ABeeZee', sans-serif;
     color: rgb(253, 251, 249);
     background: url("../image/background.jpg") no-repeat center center/cover;
+    user-select: none;
 }
 
 #rules {
@@ -28,7 +30,6 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 1rem;
 }
 
 .box {
@@ -93,4 +94,21 @@ h1 {
     font-size: 150%;
     gap: 10px;
     
+}
+@media screen and (max-width: 400px) {
+
+    body {
+        margin: 10px;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    .box {
+        width: 200px;
+        height: 250px;
+    }
+    .flip {
+        width: 200px;
+        height: 250px;
+    }
 }
