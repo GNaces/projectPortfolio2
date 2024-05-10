@@ -28,7 +28,7 @@ h1 {
     margin-top: 1rem;
 }
 
-#computer-box {
+.box {
     width: 150px;
     height: 200px;
     border: 2px solid black;
@@ -41,7 +41,7 @@ h1 {
     margin-top: 100px;
 }
 
-#computer-flip {
+.flip {
     width: 150px;
     height: 200px;
     border: 2px solid black;
@@ -51,26 +51,6 @@ h1 {
 
 .computer-area {
     display:flex;
-}
-
-#player-box {
-    width: 150px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.arrow-two {
-    margin-top: 100px;
-}
-
-#player-flip {
-    width: 150px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 10px;
 }
 
 .player-area {
