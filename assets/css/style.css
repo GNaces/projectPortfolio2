@@ -19,6 +19,9 @@ body {
     font-size: 110%;
     margin: .5rem;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    color: inherit;
 }
 
 #rules:hover {
@@ -37,6 +40,24 @@ h1 {
     border-radius: 5px;
     margin-top: 10px;
 
+}
+
+#refresh {
+    font-size: 500%;
+    color: inherit;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#refresh:hover {
+    transform: scale(1.5);
+}
+
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip {
