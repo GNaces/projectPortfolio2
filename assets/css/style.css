@@ -8,15 +8,13 @@
 }
 
 body {
-    min-height: 100vh;
-    height: 100%;
     font-family: 'ABeeZee', sans-serif;
     color: rgb(253, 251, 249);
     background: url("../image/background.jpg") no-repeat center center/cover;
 }
 
 #rules {
-    font-size: 110%;
+    font-size: 80%;
     margin: .5rem;
     cursor: pointer;
     background: transparent;
@@ -36,15 +34,17 @@ h1 {
 .box {
     width: 250px;
     height: 350px;
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     margin-top: 10px;
+    background: url("../image/back3.png") no-repeat center center/cover;
+    
 
 }
 
 #refresh {
     font-size: 500%;
-    color: inherit;
+    color: rgb(27, 78, 35);
     background: transparent;
     border: none;
     cursor: pointer;
@@ -63,7 +63,7 @@ h1 {
 .flip {
     width: 250px;
     height: 350px;
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -79,7 +79,7 @@ h1 {
 .fence {
     width: 95%;
     height: 7px;
-    border: 0 none;
+    border: none;
     margin: auto;
     background-color: gray;
 
