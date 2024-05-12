@@ -43,7 +43,7 @@ h1 {
     
 
 }
-/* Modal pop up */
+/* Modal drop */
 .modal {
     display: none; 
     position: fixed; 
@@ -55,7 +55,7 @@ h1 {
     overflow: auto; 
     /* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja  */
     top: -800px;
-    animation: drop 0.5s ease-in-out forwards;
+    animation: drop 0.8s ease-in-out forwards;
 }
 @keyframes drop{
     0%{}
@@ -96,32 +96,30 @@ h1 {
   }
 
 .card-select {
-    /* width: 50%; */
-    /* height: 40%; */
     margin: auto;
-    /* border: 3px solid black; */
-    border-radius: 20px;
+    border: 3px solid black;
 }
 
-
-
-
-
-/* Cards pop up */
 .cards {
-    display: none;
-    position: fixed;
+    display: none; 
+    position: fixed; 
     z-index: 1; 
-    /* width: 116%;  */
-    margin-left: 31%;
-    height: 38%; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 84vh; 
     overflow: auto; 
-    top: 550px;
-    animation: pop-in 0.3s ease-in-out forwards;
+    /* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja  */
+    top: 100px;
+    animation: pop-in 0.6s ease-in-out forwards;
 }
 @keyframes pop-in {
     0% { opacity: 0; transform: scale(0.1); }
     100% { opacity: 1; transform: scale(1); }
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 .shoot {
@@ -136,8 +134,13 @@ img {
 }
 
 .select {
-    width: 70px;
-    height: 90px;
+    width: 200px;
+    height: 250px;
+}
+
+#card-list {
+    list-style: none;
+
 }
 #refresh {
     font-size: 250%;
@@ -192,7 +195,7 @@ img {
     gap: 10px;
     
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
 
     body {
         margin: 10px;
@@ -205,25 +208,27 @@ img {
         font-size: 100%;
     }
     .box {
-        width: 200px;
-        height: 250px;
+        width: 100px;
+        height: 150px;
     }
     .flip {
-        width: 200px;
-        height: 250px;
+        width: 100px;
+        height: 150px;
     }
     .modal-content {
         max-width: 100%;
         font-size: 80%;
     }
-    .cards {
-        margin-left: 2%;
-        height: 30%; 
-        top: 450px;
+    .modal {
+        top: -700px;
     }
-    
+   
     .select {
-        width: 40px;
-        height: 60px;
+        width: 95px;
+        height: 130px;
+    }
+
+    .cards {
+        top: 55px;
     }
 }
