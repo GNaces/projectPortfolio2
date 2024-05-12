@@ -46,7 +46,6 @@ h1 {
 .modal {
     display: none; 
     position: fixed; 
-    transition: 1000ms ;
     z-index: 1; 
     left: 0;
     top: 0;
@@ -95,6 +94,52 @@ h1 {
     cursor: pointer;
   }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.card-select {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+}
+
+/* Cards pop up */
+.cards {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: auto; 
+    /* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja  */
+    top: -600px;
+    animation: drop 0.5s ease-in-out forwards;
+}
+@keyframes drop{
+    0%{}
+    70%{ transform: translateY(700px)}
+    100%{ transform: translateY(650px)}
+}
+
+.shoot {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.card-select {
+
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 150%;
+
+}
 #refresh {
     font-size: 500%;
     color: rgb(12, 212, 55);
