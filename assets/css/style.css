@@ -13,6 +13,7 @@ body {
     color: rgb(253, 251, 249);
     background: url("../image/background.jpg") no-repeat center center/cover;
     user-select: none;
+    cursor: pointer;
 }
 
 #rules {
@@ -37,7 +38,7 @@ h1 {
     height: 350px;
     border: 2px solid whitesmoke;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
     background: url("../image/back3.png") no-repeat center center/cover;
     
 
@@ -94,55 +95,53 @@ h1 {
     cursor: pointer;
   }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
 .card-select {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
+    /* width: 50%; */
+    /* height: 40%; */
     margin: auto;
+    /* border: 3px solid black; */
+    border-radius: 20px;
 }
+
+
+
+
 
 /* Cards pop up */
 .cards {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100vw; 
-    height: 100vh; 
+    /* width: 116%;  */
+    margin-left: 31%;
+    height: 38%; 
     overflow: auto; 
-    /* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja  */
-    top: -600px;
-    animation: drop 0.5s ease-in-out forwards;
+    top: 550px;
+    animation: pop-in 0.3s ease-in-out forwards;
 }
-@keyframes drop{
-    0%{}
-    70%{ transform: translateY(700px)}
-    100%{ transform: translateY(650px)}
+@keyframes pop-in {
+    0% { opacity: 0; transform: scale(0.1); }
+    100% { opacity: 1; transform: scale(1); }
 }
 
 .shoot {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    
 }
 
-.card-select {
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
-    border: 3px solid black;
-    border-radius: 20px;
-    font-size: 150%;
-
+.select {
+    width: 70px;
+    height: 90px;
 }
 #refresh {
-    font-size: 500%;
-    color: rgb(12, 212, 55);
+    font-size: 250%;
+    color: rgb(3, 75, 3);
     background: transparent;
     border: none;
     cursor: pointer;
@@ -199,7 +198,11 @@ img {
         margin: 10px;
     }
     h1 {
-        font-size: 150%;
+        font-size: 130%;
+    }
+
+    .count {
+        font-size: 100%;
     }
     .box {
         width: 200px;
@@ -213,5 +216,14 @@ img {
         max-width: 100%;
         font-size: 80%;
     }
+    .cards {
+        margin-left: 2%;
+        height: 30%; 
+        top: 450px;
+    }
     
+    .select {
+        width: 40px;
+        height: 60px;
+    }
 }
