@@ -151,7 +151,7 @@ img {
 }
 
 #refresh:hover {
-    transform: rotate(180deg) scale(1.2);
+    transform: rotate(90deg) scale(1.2);
 
 }
 
