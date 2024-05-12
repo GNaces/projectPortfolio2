@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Card Betting Game</title>
 </head>
+
 <body>
     <header>
-        <h1>Card Betting Game <button id="rules"><i class="fa-solid fa-circle-question"></i></button></h1>
+        <h1>Card Betting Game <button id="rules" onclick="styleModal()"><i
+                    class="fa-solid fa-circle-question"></i></button></h1>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <ul id="game-rules">
+                    <li>A has the largest value</li>
+                    <li>K beats all except A</li>
+                    <li>Q is the next valued to K</li>
+                    <li>J is greater than all other number value</li>
+                    <li>Numbers are valued consecutively</li>
+                </ul><br>
+                <span onclick="styleModal()" class="exit">BACK</span>
+            </div>
+        </div>
     </header>
     <main>
         <section class="game-area">
@@ -27,13 +42,18 @@
             <div id="play-player">Player:</div>
             <div id="play-score">0</div>
         </section>
+        <section>
+
+        </section>
         <section class="game-area">
-            <div class="box" id="start"><button id="refresh"><i class="fa-solid fa-eye"></i></button></div>
+            <div class="box" id="start"><button id="refresh"><i class="fa-regular fa-circle-left"></i></i></button>
+            </div>
             <div class="arrow"><i class="fa-solid fa-right-long"></i></div>
             <div class="flip"></div>
         </section>
     </main>
-    <script src="https://kit.fontawesome.com/e7ca6616c8.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e7ca6616c8.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

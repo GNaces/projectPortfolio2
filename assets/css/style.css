@@ -42,17 +42,60 @@ h1 {
     
 
 }
+/* Modal pop up */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: auto; 
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 40%;
+    font-size: 150%;
+    background: gray;
+}
+
+#game-rules {
+    list-style-type: none;
+}
+
+.exit {
+    font-size: 110%;
+    text-decoration: underline;
+    
+}
+
+.exit:hover,
+.exit:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 #refresh {
     font-size: 500%;
-    color: rgb(27, 78, 35);
+    color: rgb(12, 212, 55);
     background: transparent;
     border: none;
     cursor: pointer;
 }
 
 #refresh:hover {
-    transform: scale(1.5);
+    transform: rotate(180deg) scale(1.2);
+
 }
 
 #start {
@@ -111,4 +154,9 @@ h1 {
         width: 200px;
         height: 250px;
     }
+    .modal-content {
+        max-width: 100%;
+        font-size: 80%;
+    }
+    
 }
