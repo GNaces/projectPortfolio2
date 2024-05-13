@@ -8,6 +8,7 @@ const choices = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A
 
 for (let button of buttons) {
     button.addEventListener("click", function() {
+        // let playerChoice = Math.floor(Math.random() *13)
         let playerChoice = this.getAttribute("data-choice");
         playGame(playerChoice);
     });
@@ -24,8 +25,15 @@ function styleModal() {
  * Activate class when arrow up button clicked
  */
 function styleCards() {
-    cards.classList.toggle("shoot");
+    cards.classList.toggle("shoot");    
 }
+/**
+ * Dramatically hide button after being clicked.
+ */
+function hideButton(x) {
+    x.style.display = 'none';
+}
+
 
 function playGame(playerChoice) {
 
