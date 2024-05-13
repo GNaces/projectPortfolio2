@@ -79,7 +79,7 @@ h1 {
 }
 
 #game-rules {
-    list-style-type: none;
+    margin-left: 10px;
 }
 
 .exit {
