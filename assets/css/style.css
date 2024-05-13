@@ -109,7 +109,7 @@ h1 {
     width: 100vw; 
     height: 84vh; 
     overflow: auto; 
-    /* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja  */
+    /* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja page */
     top: 100px;
     animation: pop-in 0.6s ease-in-out forwards;
 }
@@ -118,6 +118,7 @@ h1 {
     100% { opacity: 1; transform: scale(1); }
 }
 
+/* code learned from https://www.youtube.com/watch?v=Dy8cAfO0wAk Shihabiiuc page */
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -136,6 +137,10 @@ img {
 .select {
     width: 200px;
     height: 250px;
+}
+
+.select:hover {
+    transform: scale(1.1);
 }
 
 #card-list {
@@ -211,6 +216,9 @@ img {
         width: 100px;
         height: 150px;
     }
+    .modal-content {
+        font-size: 60%;
+    }
     .flip {
         width: 100px;
         height: 150px;
@@ -230,5 +238,11 @@ img {
 
     .cards {
         top: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        max-width: 90%;
     }
 }
