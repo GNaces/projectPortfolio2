@@ -77,7 +77,7 @@ function playGame(playerChoice) {
 
 function incrementPlayerScore(didPlayerWin) {
 
-        //Get computer or player html tag, and get the number value of the tag and increment by 1
+    //Get computer or player html tag, and get the number value of the tag and increment by 1
     if (didPlayerWin) {
         const newScore = Number(playerScore.innerText) + 1;
         playerScore.innerText = newScore;
@@ -102,5 +102,6 @@ function restartGame() {
     computerImage.src = `assets/image/start.png`;
     computerImage.alt = "Joker image";
     alert("Game is Restart");
+    // reload code learned from https://www.youtube.com/watch?v=ZJUhKP9PbHs Coder Gauam page
     location.reload();
 }

@@ -25,7 +25,7 @@ body {
     color: inherit;
 }
 
-#rules, #restart:hover {
+#restart:hover, #rules:hover {
     transform: scale(1.5);
 }
 
@@ -110,7 +110,6 @@ h1 {
     width: 100vw; 
     height: 84vh; 
     overflow: auto; 
-    /* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja page */
     top: 100px;
     animation: pop-in 0.6s ease-in-out forwards;
 }
