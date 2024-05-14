@@ -54,7 +54,7 @@ h1 {
     width: 100vw; 
     height: 100vh; 
     overflow: auto; 
-    /* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja  */
+/* animation code belongs to https://www.youtube.com/watch?v=B0_M1y4aFAQ Net Ninja */
     top: -800px;
     animation: drop 0.8s ease-in-out forwards;
 }
