@@ -20,33 +20,33 @@
                     <li>Player who has the largest value wins the round</li>
                     <li>Click this <i class="fa-regular fa-circle-up"></i> button to find selection of cards. </li>
                     <li>Select your card in the pop up list.</li>
-                    <li>Card will be removed from the choices once selected</li><br>
+                    <li>Card will be removed from the choices once selected</li>
                     <li>Player who has the largest score wins the game</li>
-                    <p>Enjoy!</p>
                 </ul>
+                <p>Enjoy!</p>
                 <span onclick="styleModal()" class="exit">EXIT</span>
             </div>
         </div>
     </header>
     <main>
-        <section class="game-area">
+        <div class="game-area">
             <div class="box"></div>
             <div class="arrow"><i class="fa-solid fa-right-long"></i></div>
             <div class="flip" id="computer">
-                <img id="computer-image" src="assets/image/start.png" alt="Joker image"></img>
+                <img id="computer-image" src="assets/image/start.png" alt="Joker image">
             </div>
-        </section>
-        <section class="count">
+        </div>
+        <div class="count">
             <button id="restart"><i class="fa-solid fa-arrows-rotate"></i></button>
             <div id="comp-player">Computer:</div>
             <div id="comp-score"></div>
-        </section>
+        </div>
         <hr class="fence">
-        <section class="count">
+        <div class="count">
             <div class="text"></div>
             <div id="play-player">Player:</div>
             <div id="play-score"></div>
-        </section>
+        </div>
         <div id="myCards" class="cards">
             <div class="card-select">
                 <ul id="card-list">
@@ -77,15 +77,15 @@
                 </ul>
             </div>
         </div>
-        <section class="game-area">
+        <div class="game-area">
             <div class="box" id="start"><button id="refresh" onclick="styleCards()"><i
                         class="fa-regular fa-circle-up"></i></button>
             </div>
             <div class="arrow"><i class="fa-solid fa-right-long"></i></div>
             <div class="flip" id="player">
-                <img id="player-image" src="assets/image/start.png" alt="Joker image"></img>
+                <img id="player-image" src="assets/image/start.png" alt="Joker image">
             </div>
-        </section>
+        </div>
     </main>
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/e7ca6616c8.js" crossorigin="anonymous"></script>
