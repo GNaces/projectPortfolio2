@@ -62,6 +62,12 @@ function playGame(playerChoice) {
     computerImage.src = `assets/image/${choices[computerChoice]}-card.png`;
     computerImage.alt = choices[computerChoice];
 
+    //Determine if its a draw and display "DRAW"
+    if (playerChoiceString == computerChoiceString) {
+        text.innerText = "DRAW";
+        return;
+    }
+
     //Calculate if the player won
     const didPlayerWin = (playerChoiceString > computerChoiceString);
 
@@ -82,11 +88,6 @@ function incrementPlayerScore(didPlayerWin) {
         computerScore.innerText = newScore;
         text.innerText = "COMPUTER WIN";
     }
-
-    if (playerChoiceString == computerChoiceString) {
-        text.innerText = "DRAW";
-        return;
-    }
 }
 
 /**
@@ -101,4 +102,5 @@ function restartGame() {
     computerImage.src = `assets/image/start.png`;
     computerImage.alt = "Joker image";
     alert("Game is Restart");
+    location.reload();
 }
