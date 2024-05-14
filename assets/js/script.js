@@ -5,8 +5,7 @@ const computerScore = document.getElementById("comp-score");
 const buttons = document.getElementsByClassName("select");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
-const choices = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
-// const cardValue = { "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "10": 10, J: 11, Q: 12, K: 13, A: 14, };
+const choices = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", ];
 const text = document.querySelector(".text");
 
 for (let button of buttons) {
@@ -43,18 +42,18 @@ function hideButton(x) {
 function playGame(playerChoice) {
 
     //Get a random value for the computer
-    let computerChoice = Math.floor(Math.random() * 13);
+    let computerChoice = Math.floor(Math.random() * 14);
 
     //Getting string results for the player and computers from the integer choice"
     const computerChoiceString = choices[computerChoice];
     const playerChoiceString = choices[playerChoice];
 
     //Set the player image to the players choice
-    playerImage.src = `assets/image/${choices[playerChoice]}.png`;
+    playerImage.src = `assets/image/${choices[playerChoice]}-card.png`;
     playerImage.alt = choices[playerChoice];
 
     //Set the computer image to the computers choice
-    computerImage.src = `assets/image/${choices[computerChoice]}.png`;
+    computerImage.src = `assets/image/${choices[computerChoice]}-card.png`;
     computerImage.alt = choices[computerChoice];
 
     if (playerChoiceString == computerChoiceString) {
