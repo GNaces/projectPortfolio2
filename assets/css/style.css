@@ -16,7 +16,7 @@ body {
     cursor: pointer;
 }
 
-#rules {
+#rules,#restart {
     font-size: 80%;
     margin: .5rem;
     cursor: pointer;
@@ -25,9 +25,10 @@ body {
     color: inherit;
 }
 
-#rules:hover {
+#rules, #restart:hover {
     transform: scale(1.5);
 }
+
 
 h1 {
     text-align: center;
@@ -148,15 +149,15 @@ img {
 
 }
 #refresh {
-    font-size: 250%;
-    color: rgb(3, 75, 3);
+    font-size: 300%;
+    color: rgb(22, 5, 253);
     background: transparent;
     border: none;
     cursor: pointer;
 }
 
 #refresh:hover {
-    transform: rotate(90deg) scale(1.2);
+    transform: rotate(90deg) scale(1.5);
 
 }
 
@@ -203,7 +204,7 @@ img {
     display: flex;
     justify-content:center;
     align-items: center;
-    margin: 10px;
+    /* margin: 10px; */
     font-size: 150%;
     gap: 10px;
     

@@ -17,13 +17,11 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <ul id="game-rules">
-                    <li>A - has the largest value</li>
-                    <li>K - beats all except A</li>
-                    <li>Q - is the next valued to K</li>
-                    <li>J - is greater than all other number value</li>
+                    <li>Player who has the largest value wins the round</li>
                     <li>Click this <i class="fa-regular fa-circle-up"></i> button to find selection of cards. </li>
                     <li>Select your card in the pop up list.</li>
                     <li>Card will be removed from the choices once selected</li><br>
+                    <li>Player who has the largest score wins the game</li>
                     <p>Enjoy!</p>
                 </ul>
                 <span onclick="styleModal()" class="exit">EXIT</span>
@@ -39,6 +37,7 @@
             </div>
         </section>
         <section class="count">
+            <button id="restart"><i class="fa-solid fa-arrows-rotate"></i></button>
             <div id="comp-player">Computer:</div>
             <div id="comp-score"></div>
         </section>
@@ -51,37 +50,37 @@
         <div id="myCards" class="cards">
             <div class="card-select">
                 <ul id="card-list">
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "0">
+                    <!-- <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "0">
                         <img src="assets/image/A-card.png" alt="Ace">
-                    </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "1">
+                    </button></li> -->
+                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "0">
                             <img src="assets/image/2-card.png" alt="Two">
                         </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "2">
+                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "1">
                             <img src="assets/image/3-card.png" alt="Three">
                         </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "3">
+                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "2">
                             <img src="assets/image/4-card.png" alt="Four">
                         </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "4">
+                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "3">
                             <img src="assets/image/5-card.png" alt="Five">
                         </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "5">
+                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "4">
                             <img src="assets/image/6-card.png" alt="Six">
                         </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "6">
+                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "5">
                             <img src="assets/image/7-card.png" alt="Seven">
                         </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "7">
+                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "6">
                             <img src="assets/image/8-card.png" alt="Eight">
                         </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "8">
+                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "7">
                             <img src="assets/image/9-card.png" alt="Nine">
                         </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "9">
+                    <!-- <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "8">
                             <img src="assets/image/10-card.png" alt="Ten">
-                        </button></li>
-                    <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "10">
+                        </button></li> -->
+                    <!-- <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "10">
                             <img src="assets/image/J-card.png" alt="Jack">
                         </button></li>
                     <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "11">
@@ -89,7 +88,7 @@
                         </button></li>
                     <li><button class="select" onclick="hideButton(this), styleCards()" data-choice= "12">
                             <img src="assets/image/K-card.png" alt="King">
-                        </button></li>
+                        </button></li> -->
 
                 </ul>
             </div>

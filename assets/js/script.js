@@ -5,8 +5,9 @@ const computerScore = document.getElementById("comp-score");
 const buttons = document.getElementsByClassName("select");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
-const choices = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", ];
+const choices = ["2", "3", "4", "5", "6", "7", "8", "9",];
 const text = document.querySelector(".text");
+const restart = document.getElementById("restart");
 
 for (let button of buttons) {
     button.addEventListener("click", function () {
@@ -14,6 +15,11 @@ for (let button of buttons) {
         playGame(playerChoice);
     });
 }
+
+/**
+ * Add event listener to restart button
+ */
+restart.addEventListener("click", restartGame);
 
 /**
  * Activate class when question mark button clicked
@@ -42,7 +48,7 @@ function hideButton(x) {
 function playGame(playerChoice) {
 
     //Get a random value for the computer
-    let computerChoice = Math.floor(Math.random() * 14);
+    let computerChoice = Math.floor(Math.random() * 8);
 
     //Getting string results for the player and computers from the integer choice"
     const computerChoiceString = choices[computerChoice];
@@ -56,11 +62,6 @@ function playGame(playerChoice) {
     computerImage.src = `assets/image/${choices[computerChoice]}-card.png`;
     computerImage.alt = choices[computerChoice];
 
-    if (playerChoiceString == computerChoiceString) {
-        text.innerText = "DRAW";
-        return;
-    }
-
     //Calculate if the player won
     const didPlayerWin = (playerChoiceString > computerChoiceString);
 
@@ -71,14 +72,33 @@ function playGame(playerChoice) {
 function incrementPlayerScore(didPlayerWin) {
 
         //Get computer or player html tag, and get the number value of the tag and increment by 1
-        if (didPlayerWin) {
-            const newScore = Number(playerScore.innerText) + 1;
-            playerScore.innerText = newScore;
-            text.innerText = "YOU WIN";
+    if (didPlayerWin) {
+        const newScore = Number(playerScore.innerText) + 1;
+        playerScore.innerText = newScore;
+        text.innerText = "GREAT CHOICE";
     }
     else {
         const newScore = Number(computerScore.innerText) +1;
         computerScore.innerText = newScore;
         text.innerText = "COMPUTER WIN";
     }
+
+    if (playerChoiceString == computerChoiceString) {
+        text.innerText = "DRAW";
+        return;
+    }
+}
+
+/**
+ * Restarts the game and scores back to 0
+ */
+function restartGame() {
+    playerScore.innerText = 0;
+    computerScore.innerText = 0;
+    text.innerText = "";
+    playerImage.src = `assets/image/start.png`;
+    playerImage.alt = "Joker image";
+    computerImage.src = `assets/image/start.png`;
+    computerImage.alt = "Joker image";
+    alert("Game is Restart");
 }
