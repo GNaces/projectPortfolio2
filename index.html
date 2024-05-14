@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>Card Betting Game <button id="rules" onclick="styleModal()"><i
+        <h1>Card Betting Game <button id="rules" aria-label="gameInstructions" onclick="styleModal()"><i
                     class="fa-solid fa-circle-question"></i></button></h1>
         <div id="myModal" class="modal">
             <div class="modal-content">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="count">
-            <button id="restart"><i class="fa-solid fa-arrows-rotate"></i></button>
+            <button id="restart" aria-label="gameReload"><i class="fa-solid fa-arrows-rotate"></i></button>
             <div id="comp-player">Computer:</div>
             <div id="comp-score"></div>
         </div>
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="game-area">
-            <div class="box" id="start"><button id="refresh" onclick="styleCards()"><i
+            <div class="box" id="start"><button id="refresh" aria-label="cardSelection" onclick="styleCards()"><i
                         class="fa-regular fa-circle-up"></i></button>
             </div>
             <div class="arrow"><i class="fa-solid fa-right-long"></i></div>
