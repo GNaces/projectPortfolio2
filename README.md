@@ -56,7 +56,35 @@ Users can use the game to hone their competitive skills in their spare time. Thi
 * This page works in different broswers such as; Google Chrome, Safari, Microsoft Edge and Firefox.
 * The page is responsive, all links work and it all looks good on different standard screen sizes using devtools and testing out on different devices.
 * I confirm that the header, instructions, options, results and notifications are all readable and easy to access and understand.
-* I have confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+
+### Unfixed Bugs
+
+* No unfixed bugs.
+
+### Validator Testing
+
+* HTML 
+    * Four errors and four warning were found when validating through W3C validator
+        * Error: Element br not allowed as child of element ul in this context. Fixed through removing br element.
+        * Error: Element p not allowed as child of element ul in this context. Fixed by transfering as child to div.
+        * Two Errors: Stray end tag img. Fixed by removing the img end tag.
+        * Four Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. Fixed by replacing section element to div.
+
+* CSS
+    * No errors were found when passing through the official (Jigsaw) validator.
+
+* Lighthouse
+    * I have confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
 ![Lighthouse](readme-assets/lighthouse.png)
 
+# Deployment
+
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+In GitHub pages , navigate to the Settings tab.
+    * Down the left hand side menu, navigate to the Pages tab.
+    * Select the Main branch and select save.
+    * The page will automatically refresh and the page link will appear at the top of the GitHub pages.
+    * When a green tick appears it indicates a successful deployment.
+    * The live link can be found here - [Simple Card Betting Game](https://gnaces.github.io/projectPortfolio2/)
