@@ -65,7 +65,7 @@ Users can use the game to hone their competitive skills in their spare time. Thi
 ### Validator Testing
 
 * HTML 
-    * Four errors and four warning were found when validating through W3C validator
+    * Four errors and four warning were found when validating through W3C validator.
         * Error: Element br not allowed as child of element ul in this context. Fixed through removing br element.
         * Error: Element p not allowed as child of element ul in this context. Fixed by transfering as child to div.
         * Two Errors: Stray end tag img. Fixed by removing the img end tag.
@@ -87,4 +87,19 @@ In GitHub pages , navigate to the Settings tab.
     * Select the Main branch and select save.
     * The page will automatically refresh and the page link will appear at the top of the GitHub pages.
     * When a green tick appears it indicates a successful deployment.
-    * The live link can be found here - [Simple Card Betting Game](https://gnaces.github.io/projectPortfolio2/)
+    * The live link can be found here - [Simple Card Betting Game](https://gnaces.github.io/projectPortfolio2/).
+
+# Credits
+
+* Codes were mostly taken from the Portfolio Project Scope: ULTIMATE Rock Paper Scissors.
+* Modals, score increment and game restart was mostly taken from [fredboys Rock-Paper-Scissors-Lizard-Spock](https://github.com/fredboys/Rock-Paper-Scissors-Lizard-Spock) project.
+* Favicon steps is from Dani Krossing YouTube channel.
+* Animation Code was learned from [Net Ninja YouTube Page](https://www.youtube.com/watch?v=B0_M1y4aFAQ).
+* Hide choice button once clicked was learned from [HowToCodeSchool](https://www.youtube.com/watch?v=F_ASunccAro).
+
+### Media
+
+* Page background was taken from [stock.adobe.com](https://stock.adobe.com/uk/contributor/200900772/ievgen-skrypko?load_type=author&prev_url=detail) site.
+* Joker image was taken from [Freepik.com](https://www.freepik.com/free-photos-vectors/joker-cartoon)
+* Cards were crafted inside built-in microsoft paint app.
+
