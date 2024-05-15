@@ -50,3 +50,13 @@ Users can use the game to hone their competitive skills in their spare time. Thi
 * When I have enough time, I will expand the selection to a full deck of cards, allowing the user to select three cards to play against the computer.
 * Add end game option which lets the player knows who won the game as a whole.
 * Define the username capability of the player to make the game more personalized.
+
+# Testing
+
+* This page works in different broswers such as; Google Chrome, Safari, Microsoft Edge and Firefox.
+* The page is responsive, all links work and it all looks good on different standard screen sizes using devtools and testing out on different devices.
+* I confirm that the header, instructions, options, results and notifications are all readable and easy to access and understand.
+* I have confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+![Lighthouse](readme-assets/lighthouse.png)
+
